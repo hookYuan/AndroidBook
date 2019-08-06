@@ -7,7 +7,7 @@
 
 ## 编程规约
 ### （一）、Java命名风格（参考[《阿里巴巴Java开发手册》](https://snailclimb.gitee.io/javaguide/#/java/Java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83?id=%e5%9b%a2%e9%98%9f])）
-1. 【强制】代码中的命名均不能以下划线或美元符号开始，也不能以下划线或美元符号结束。
+1. 【强制】代码中的命名均不能以下划线或美元符号开始，也不能以下划线或美元符号结束。               
 【反例】_name / __name / $name / name_ / name$ / name__ 
 <br/>
 
@@ -99,6 +99,7 @@ class Son extends ConfusingName {
 15. 【推荐】接口类中的方法和属性不要加任何修饰符号（public 也不要加），保持代码的简洁性，并加上有效的Javadoc注释。尽量不要在接口里定义变量，如果一定要定义变量，肯定是与接口方法相关，并且是整个应用的基础常量。
 【正例】接口方法签名 void commit(); 接口基础常量 String COMPANY = "alibaba"; 【反例】接口方法定义 public abstract void f();
 【说明】JDK8中接口允许有默认实现，那么这个default方法，是对所有实现类都有价值的默认实现。
+<br/>
 
 16. 接口和实现类的命名有两套规则： 
 1）【强制】对于Service和DAO类，基于SOA的理念，暴露出来的服务一定是接口，内部的实现类用Impl的后缀与接口区别。
@@ -107,5 +108,5 @@ class Son extends ConfusingName {
  &ensp;&ensp;&ensp;2）【推荐】如果是形容能力的接口名称，取对应的形容词为接口名（通常是–able的形容词）。
         &ensp; &ensp;&ensp; &ensp;&ensp;【正例】AbstractTranslator实现 Translatable接口。
 
-（一）、Res命名风格
+（一）、RE命名风格
 
